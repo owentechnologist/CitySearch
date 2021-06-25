@@ -15,20 +15,29 @@ This CitySearch project is part of a larger microservices example and does Four 
 Example searches:
 
 Get me the cities asociated with the Zip-code 11213:
+<code>
 FT.SEARCH "IDX:cities" "11213"
+</code>
 
 Get me the cities asociated with the Zip-code 11213 (but exclude Brooklyn from the results):
+<code>
 FT.SEARCH "IDX:cities" "11213 -Brooklyn"
+</code>
 
 Get me the cities that sounds like 'brewklin' 
+<code>
 FT.SEARCH "IDX:cities" brewklin
+</code>
 
 Get me the cities that sound like 'wight' but don't include any that have a zip equal to 'K4P'
+<code>
 FT.SEARCH "IDX:cities" "wight -K4P"
+</code>
 
 Get me the cities within 50 Km of this location on Earth:
+<code>
 FT.SEARCH "IDX:cities" "@geopoint:[-122.8, 49, 50 km]"
-
+</code>
 
 
 
